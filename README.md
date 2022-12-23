@@ -1,1 +1,1 @@
-https://github.io/pyklek-JSFEPRESCHOOL2022Q4/plants/
+https://github.io/pyklek/plants/
