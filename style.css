@@ -1,0 +1,72 @@
+.header {
+    position: absolute;
+    width: 1440px;
+    height: 134px;
+    left: 0px;
+    top: 0px;
+    background: #EDF2EC;
+}
+.plants-text {
+    position: absolute;
+    width: 58.13px;
+    height: 17px;
+    left: 132.05px;
+    top: 56.04px;
+
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+
+    color: #000000;
+}
+.vector1 {
+    position: absolute;
+    width: 9.92px;
+    height: 17.28px;
+    left: 111px;
+    top: 54.66px;
+
+    border: 1px solid #499A18;
+}
+.vector2 {
+
+    position: absolute;
+    width: 19px;
+    height: 20px;
+    left: 112px;
+    top: 52px;
+    
+    border: 1px solid #499A18;
+}
+.navbar {
+    position: absolute;
+    width: 1220px;
+    height: 50px;
+    left: 111px;
+    top: 42px;
+}
+.nav {
+    position: absolute;
+    width: 1220px;
+    height: 50px;
+    left: 111px;
+    top: 42px;
+}
+.list-home {
+    position: absolute;
+    height: 50px;
+    left: 61.04%;
+    right: 35.9%;
+    top: 42px;
+
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 50px;
+
+
+    color: #E06733;
+}
