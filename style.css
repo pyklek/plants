@@ -80,7 +80,6 @@ body {
     background: #EDF2EC;
     padding-bottom: 62px;
     padding-top: 62px;
-    padding-left: 109px;
 }
 .welcome-section {
     width: 1222px;
@@ -88,6 +87,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: auto;
 }
 .leafs {
     width: 448.8px;
@@ -394,7 +394,7 @@ body {
     background: #EDF2EC;
     border-radius: 20px;
     padding-left: 40px;
-    padding-right: 54px;
+    padding-right: 41px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -436,6 +436,7 @@ body {
     height: 50px;
     border: 1px solid #E06733;
     border-radius: 5px;
+    background-color: #FFFFFF;
     
 }
 .btn-contact:hover {
@@ -481,13 +482,12 @@ body {
     padding: 34px 41px;
 }
 .button-img {
-    position: absolute;
-    left: 530px;
     background-image: url(assets/prices_down.png);
     width: 16px;
     height: 16px;
 }
 .button-img:hover {
+    transition: all .3s;
     background-image: url(assets/prices_up.png)
 }
 .text_prices:hover {
