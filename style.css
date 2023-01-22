@@ -18,9 +18,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 }
-.burger-button {
-display: none;
-}  
+ 
 .list-item {
 display: flex;
 width: 452px;
@@ -637,12 +635,13 @@ padding-left: 109px;
 padding-right: 109px;
 }
 
-.burger_btn {
-display: block;
+
+@media screen and (max-width: 1439px) {
+
+
 }
 
-
-@media screen and (max-width :768px) {
+@media screen and (max-width: 768px) {
     .container {
         width: 768px;
         margin: auto; 
@@ -918,7 +917,6 @@ html {
 }
 .navbar {
     max-width: 330px;
-    height: 24px;
 }
 .logo {
     width: 77px;
@@ -1033,6 +1031,7 @@ html {
     line-height: 33px;
 }
 .services_content {
+    margin-bottom: 40px;
     margin-left: 25px;
     padding-top: 5px;
     display: flex;
@@ -1040,6 +1039,7 @@ html {
     width: 380px;
 }
 .button-serv {
+    margin: 0;
     flex-wrap: wrap;
     width: 252px;
     height: 79px;
@@ -1071,6 +1071,8 @@ html {
     margin-right: 75px;
 }
 .services {
+    width: 280px;
+    height: 2870px;
     padding: 0;
     margin: auto;        
     justify-content: center;
@@ -1117,10 +1119,12 @@ html {
     margin-top: 21px;
 }
 .prices1 {
-    margin: auto;
+    margin-left: 25px;
+    margin-top: 1px;
     height: 346px;
 }
 .prices_buttons {
+    margin-top: 40px;
     width: 224px;
     height: 235px;
     padding: 29px 22px;
@@ -1243,62 +1247,37 @@ html {
     height: 50px;
     padding: 25px 11px 0px;
 }
-.burger-button {
-    display: block;
-    width: 40px;
-    height: 38px;
-    padding: 0;
-    border: none;
-    position: relative;
-    display: flex;
+.list-item {
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    z-index: 5;
-    margin: auto;
-    }
+    justify-content: space-between;
 
-    .burger-button span {
-    display: block;
-    height: 2px;
-    width: 40px;
-    background-color: #717171;
-    transition: transform 0.5s, opacity 0.5s;
-    }
-    .list-item {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0;
-    z-index: 3;
-    background-color: #EDF2EC;
-    flex-direction: column;
-    height: 100vh;
-    width: 100vw;
-    padding: 100px 0;
-    box-sizing: border-box;
+}
+.nav {
+    position: fixed;
+    top: 0px;
+    right: 0;
+    width: 100%;
     transform: translateX(100%);
-    transition: transform 0.5s;
-    }
-    .nav.open .list-item {
-    transform: translateX(0%);
-    }
-
-    .nav.open span:nth-child(1) {
-    opacity: 0;
-    }
-
-    .nav.open span:nth-child(2) {
-    position: absolute;
-    transform: translateY(0) rotate(45deg);
-    }
-
-    .nav.open span:nth-child(3) {
-    position: absolute;
-    transform: translateY(0) rotate(-45deg);
-    }
-
-    .nav.open span:nth-child(4) {
-    opacity: 0;
-    }
+    transition: .6s;
+    /*background-color: #E3E1D5;*/
+}
+.open {
+    transform: translateX(0);
+}
+.burger {
+    display: block;
+    padding-left: 280px;
+    padding-top: 20px;
+    padding-bottom: 36px;
+}
+.burger__content {
+    width: 40px;
+    height: 24px;
+    background: linear-gradient(to bottom, #636060 8%, transparent 9%, transparent 30%, 
+    #636060 31%, #636060 39%, transparent 40%, transparent 61%, #636060 62%, #636060 70%, transparent 71%, transparent 91%, #636060 92%);
+}
+.burger-content-active {
+    background: linear-gradient(45deg, transparent 45%, #636060 46%, #636060 55%, transparent 56%), 
+    linear-gradient(-45deg, transparent 45%, #636060 46%, #636060 55%, transparent 56%);
+}
 }
