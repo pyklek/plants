@@ -28,6 +28,8 @@ padding: 0px;
 list-style: none;
 justify-content: space-between;
 align-items: center;
+position: relative;
+z-index: 2;
 }
 
 .logo {
@@ -855,20 +857,21 @@ padding-right: 109px;
         align-items: center;
         flex-direction: column;
         flex-wrap: nowrap;
+        height: 695px;
     }
     .contacts-wrapper > .contacts-img {order: 3;}
     .contacts-wrapper > .contacts-title-wrapper {order: 1;}
     .contacts-wrapper > .contacts-button-wrapper {order: 2;}
     .contacts-title-wrapper {
         width: 372px;
-        height: 431px;
+        height: 158px;
         padding-left: 90px;
         padding-top: 0;
         padding-bottom: 0;
     }
     .contacts-button-wrapper {
         width: 450px;
-        height: 500px;
+        height: 310px;
     }
     .contacts-img {
         width: 200px;
@@ -895,27 +898,29 @@ padding-right: 109px;
         margin: 0;
     }
     .rsschool {
-        margin-bottom: 4px;
+        margin-bottom: 25px;
+        line-height: 30px;
     }
     .item_contacts {
+        margin-left: 15px;
         width: 188px;
         height: 50px;
     }
 }
 
-@media screen and (max-width: 380px) {
-html {
+@media screen and (max-width: 480px) {
+html, body {
     overflow-x: hidden;
 }
 .container {
     max-width: 380px;
     margin: auto;
     padding: 0;
-    position: relative;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    /*position: relative;
+    overflow-y: scroll*/
 }
 .navbar {
+    padding-bottom: 25px;
     max-width: 330px;
 }
 .logo {
@@ -927,6 +932,7 @@ html {
 .header {
     width: 380px;
     height: 96px;
+    margin: auto;
 }
 .welcome {
     padding: 0px;
@@ -957,6 +963,7 @@ html {
     font-size: 25px;
 }
 .paragraph-welcome {
+    margin-left: 0;
     width: 314.52px;
     height: 105.42px;
     font-size: 16px;
@@ -975,7 +982,7 @@ html {
 .aboutus {
     width: 380px;
     height: 520px;
-    margin: 0;
+    margin: auto;
     padding: 0;
 }
 .aboutus-section {
@@ -989,7 +996,6 @@ html {
 }
 .aboutus-wrap {
     width: 330px;
-    height: 370px;
     margin: 0;
 }
 .title-about {
@@ -999,7 +1005,7 @@ html {
     line-height: 33px;
     text-align: center;
     margin: auto;
-    margin-top: 64px;
+    margin-top: 62px;
 }
 .color-orange {
     font-size: 25px;
@@ -1009,6 +1015,7 @@ html {
     width: 150px;
     height: 147px;
     margin-bottom: 5px;
+    margin-top: 160px;
 }
 .paragraph-about {
     width: 330px;
@@ -1022,7 +1029,7 @@ html {
     width: 380px;
     height: 3150px;
     padding: 0;
-    margin: 0;
+    margin: auto;
 }
 .serv-and-proj {
     width: 187px;
@@ -1036,7 +1043,6 @@ html {
     padding-top: 5px;
     display: flex;
     flex-direction: column;
-    width: 380px;
 }
 .button-serv {
     margin: 0;
@@ -1047,7 +1053,7 @@ html {
     padding-top: 4px;
     margin-bottom: 0px; 
     margin-top: 32px;
-    margin-right: 127px;
+    margin-left: 12px;
 }
 .btn-gardens {
     width: 121px;
@@ -1068,7 +1074,7 @@ html {
     margin-bottom: 9px;
 }
 .serv-wrap {
-    margin-right: 75px;
+    margin-left: 69px;
 }
 .services {
     width: 280px;
@@ -1100,10 +1106,13 @@ html {
     text-align: center;
 }
 .price {
+    margin: auto;
     width: 382px;
     height: 512px;
 }
 .price_wrapper {
+    width: 380px;
+    width: 3;
     margin: 0;
     display: flex;
     justify-content: space-between;
@@ -1121,7 +1130,7 @@ html {
 .prices1 {
     margin-left: 25px;
     margin-top: 1px;
-    height: 346px;
+    height: 341px;
 }
 .prices_buttons {
     margin-top: 40px;
@@ -1129,7 +1138,7 @@ html {
     height: 235px;
     padding: 29px 22px;
     margin-left: 55px;
-    margin-bottom: 22px;
+    margin-bottom: 0px;
 }
 .price_item {
     width: 180px;
@@ -1142,8 +1151,9 @@ html {
 }
 .prices2 {
     width: 230px;
-    margin: auto;
+    margin-left: 75px;
     height: 166px;
+    margin-top: 18px;
 }
 .title_gard {
     font-size: 20px;
@@ -1162,18 +1172,20 @@ html {
     font-size: 15px;
     line-height: 20px;
     margin-right: 56px;
-    margin-bottom: 45px;
+    margin-top: 15px;
 }
 .contacts {
     width: 384px;
     height: 445px;
     padding: 0;
+    margin: auto;
 }
 .contacts-img {
     width: 100px;
     background-image: url('assets/contact_woman\ 1.png'); 
     background-size: contain;
     background-repeat: no-repeat;
+    height: 400px;
 }
 .contacts-title {
     width: 192px;
@@ -1186,10 +1198,8 @@ html {
     padding-right: 6px;
 }
 .contacts-button-wrapper {
-    height: 350px;
+    height: 580px;
     width: 300px;
-    padding-bottom: 130px;
-    padding-top: 10px;
 }
 .contacts-button {
     width: 300px;
@@ -1204,6 +1214,7 @@ html {
     top: 16px;
 }
 .contacts-wrapper {
+    width: 380px;
     height: 445px;
     margin: auto;
     display: flex;
@@ -1211,6 +1222,7 @@ html {
     flex-direction: column;
 }
 .contacts-title-wrapper {
+    height: 440px;
     padding: 0;
 }
 .contacts-wrapper > .contacts-img {order: 3;}
@@ -1220,6 +1232,7 @@ html {
     width: 380px;
     height: 146px;
     padding-top: 5px;
+    margin: auto;
 }
 .container_footer {
     width: 210px;
@@ -1243,41 +1256,94 @@ html {
     padding-top: 8px;
 }
 .item_contacts {
-    width: 210px;
-    height: 50px;
-    padding: 25px 11px 0px;
+    width: 185px;
+    height: 30px;
 }
 .list-item {
+    display: block;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
+    z-index: 2;
+    height: 650px;
+    padding-left: 50px;
+    background-color: #EDF2EC;
+    transition: all 0.4s ease;
+    margin: 0;
 
 }
-.nav {
-    position: fixed;
-    top: 0px;
+.nav.open {
     right: 0;
-    width: 100%;
-    transform: translateX(100%);
-    transition: .6s;
-    /*background-color: #E3E1D5;*/
+    width: 380px;
+    height: 200px;
 }
-.open {
-    transform: translateX(0);
+.nav {
+    display: block;
+    position: absolute;
+    top: 45px;
+    width: 100%;
+    transition: all 0.4s ease;
+    right: -210%;
+
 }
 .burger {
-    display: block;
-    padding-left: 280px;
-    padding-top: 20px;
-    padding-bottom: 36px;
-}
-.burger__content {
+    position: relative;
     width: 40px;
     height: 24px;
-    background: linear-gradient(to bottom, #636060 8%, transparent 9%, transparent 30%, 
-    #636060 31%, #636060 39%, transparent 40%, transparent 61%, #636060 62%, #636060 70%, transparent 71%, transparent 91%, #636060 92%);
+    display: inline-block;
+    margin-left: 213px;
+    margin-bottom: 36px;
 }
-.burger-content-active {
-    background: linear-gradient(45deg, transparent 45%, #636060 46%, #636060 55%, transparent 56%), 
-    linear-gradient(-45deg, transparent 45%, #636060 46%, #636060 55%, transparent 56%);
+.burger__line span, .burger__line:after, .burger__line:before {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    display: inline-block;
+    border-radius: 2px; 
+    background-color: #717171;
+    top: calc( 50% - 1.5px );
+    left: 0;
+}
+.burger__line span {
+    top: 19px;
+}
+.burger__line span:nth-child(2) {
+    top: 27px;
+}
+.burger__line.open span {
+    opacity: 0;
+    transition: 0.5s;
+}
+.burger__line.open span:nth-child(2) {
+    opacity: 0;
+    transition: 0.5s;
+}
+.burger__line:after, .burger__line:before {
+    content: "";
+}
+.burger__line:after {
+    bottom: 12px;
+}
+.burger__line:before {
+    top: 35px;
+}
+.burger__line.open:before {
+	transform: rotate(45deg);
+    top: 11px;
+    transition: 0.4s;
+    margin-top: 15px;
+}
+.burger__line.open:after {
+	transform: rotate(-45deg);
+    bottom: 11px;
+    transition: 0.4s;
+    margin-top: 15px;
+}
+
+.fixed-pade {
+    overflow: hidden;
+}
+.leafs1 {
+    display: none;
 }
 }
